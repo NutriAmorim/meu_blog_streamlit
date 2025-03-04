@@ -1,20 +1,38 @@
 import streamlit as st
 
-st.set_page_config(page_title="Meu Blog", page_icon="imagens/icon.ico")
+st.set_page_config(
+    page_title="Nutri Amorim - Seu Blog de Nutrição",
+    page_icon="imagens/favicon.ico" 
+)
+
 st.markdown(
     """
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">  <!-- Favicon principal -->
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <link rel="manifest" href="imagens/site.webmanifest">
 
     <style>
+        /* Personaliza a barra superior */
+        header[data-testid="stHeader"] {
+           background-color: #2E8B57; /* Verde-mata */
+        }
+
+        /* Personaliza fundo e barra lateral */
         .stApp {
             background-color: #2E8B57; /* Verde-mar */
         }
+
         .stSidebar {
-            background-color:  #2E8B57; /* Verde-mata para a barra lateral */
-            border-right: 2px solid #FFFFFF; /* Borda branca separando a barra lateral do conteúdo */
+            background-color: #2E8B57; /* Verde-mata para a barra lateral */
+            border-right: 2px solid #000000; /* Linha de separação preta */
+        }
+
+        /* Fundo do conteúdo central */
+        .stApp {
+            background-color: #FFFFFF; /* Fundo branco */
+            color: #000000; /* Texto preto */
         }
     </style>
     """,
