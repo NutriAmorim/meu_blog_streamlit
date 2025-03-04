@@ -1,14 +1,18 @@
 import streamlit as st
 
-st.set_page_config(page_title="Nutri Amorim", page_icon="images/favicon.ico", layout="wide")
-
+st.set_page_config(page_title="Meu Blog", page_icon="imagens/icon.ico")
 st.markdown(
     """
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="imagens/site.webmanifest">
+
     <style>
         .stApp {
             background-color: #2E8B57; /* Verde-mar */
         }
-         .stSidebar {
+        .stSidebar {
             background-color:  #2E8B57; /* Verde-mata para a barra lateral */
             border-right: 2px solid #FFFFFF; /* Borda branca separando a barra lateral do conteúdo */
         }
