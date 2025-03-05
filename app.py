@@ -34,16 +34,35 @@ st.markdown(
             background-color: #FFFFFF; /* Fundo branco */
             color: #000000; /* Texto preto */
         }
+
+        /* Personalizando a barra de pesquisa */
+        div[data-testid="stTextInput"] input {
+            background-color: #FFFFFF !important; /* Fundo branco */
+            border: 2px solid #000000 !important; /* Borda preta */
+            color: #000000 !important; /* Texto preto */
+            padding: 8px !important; /* Espaçamento interno */
+            border-radius: 5px !important; /* Bordas arredondadas */
+        }
+
     </style>
     """,
     unsafe_allow_html=True
 )
 
+# Barra de pesquisa no topo
+search_query = st.text_input("Pesquisar no blog...", "")
+
+# Layout com título e barra de pesquisa
 st.title("Nutri Amorim - Seu Blog de Nutrição")
 
-st.sidebar.title("Menu")
-page = st.sidebar.radio("Navegue pelo site", ["Início", "Sobre", "Receitas", "Pesquisas","Quem Somos Nós",])
+if search_query:
+    st.write(f"Você está pesquisando por: {search_query}")
 
+# MENU LATERAL
+st.sidebar.title("Menu")
+page = st.sidebar.radio("Navegue pelo site", ["Início", "Sobre", "Receitas", "Pesquisas", "Quem Somos Nós"])
+
+# Conteúdo baseado na seleção do menu lateral
 if page == "Início":
     st.header("Bem-vindo ao Blog Nutri Amorim!")
     st.write("Aqui você encontrará conteúdos sobre nutrição, pesquisas científicas e receitas saudáveis.")
