@@ -56,7 +56,7 @@ page = st.sidebar.radio("Navegue pelo site", ["Início", "Sobre", "Receitas", "P
 if page == "Início":
     st.header("Bem-vindo ao Blog Nutri Amorim!")
     st.write("Aqui você encontrará conteúdos sobre nutrição, pesquisas científicas e receitas saudáveis.")
-    st.image("imagens_carrosel/imagen1.jpg", caption="Imagem de boas-vindas", use_column_width=True)
+    st.image("imagens_carrosel/imagem1.jpg", caption="Imagem de boas-vindas", use_column_width=True)
 
 elif page == "Sobre":
     st.header("Sobre o Blog")
