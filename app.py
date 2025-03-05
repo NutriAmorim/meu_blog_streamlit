@@ -42,7 +42,7 @@ st.markdown(
 st.title("Nutri Amorim - Seu Blog de Nutrição")
 
 st.sidebar.title("Menu")
-page = st.sidebar.radio("Navegue pelo site", ["Início", "Sobre", "Receitas", "Pesquisas"])
+page = st.sidebar.radio("Navegue pelo site", ["Início", "Sobre", "Receitas", "Pesquisas","Quem Somos Nós",])
 
 if page == "Início":
     st.header("Bem-vindo ao Blog Nutri Amorim!")
@@ -59,6 +59,18 @@ elif page == "Receitas":
 elif page == "Pesquisas":
     st.header("Pesquisas Científicas")
     st.write("Confira estudos e artigos científicos sobre nutrição.")
+
+elif page == "Quem Somos Nós":
+    st.header("Quem Somos Nós")
+    st.write("""
+        Olá! Somos o blog Nutri Amorim, dedicado a oferecer conteúdos sobre nutrição saudável, baseada em evidências científicas.
+        
+        **Sobre o meu trabalho:**  
+        Como futuro nutricionista, meu objetivo é proporcionar um estilo de vida saudável e equilibrado para todos, através de informações valiosas sobre alimentação, receitas e dicas de saúde.
+
+        **Quem sou eu:**  
+        Sou Marcos Felipe Amorim Mendes, Estudante de Nutrição na UniCesumar com intuito em ajudar as pessoas a adotarem hábitos saudáveis e transformarem suas vidas através da alimentação. Com base em estudos e pesquisas, compartilho conteúdos que vão de receitas a estudos científicos, tudo para promover o bem-estar e a saúde de quem me acompanha.
+    """)
 
 st.markdown("---")
 st.write("© 2025 Nutri Amorim - Todos os direitos reservados")
