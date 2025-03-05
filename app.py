@@ -48,6 +48,26 @@ st.markdown(
 )
 search_query = st.text_input("Pesquisar no blog...", "")
 
+st.image("imagens_carrosel/imagen4.jpg", use_container_width=True)
+
+st.markdown(
+    """
+    <div style="text-align: center; background-color: rgba(0, 128, 0, 0.7); color: white; 
+                padding: 15px; font-size: 18px; font-weight: bold; border-radius: 5px; 
+                margin-top: 10px;">
+        O vegetarianismo é o sistema dos que são partidários da alimentação vegetal, usando frutas, hortaliças, 
+        tubérculos, cereais, mel e etc.<br><br>
+        Na galeria dos vegetarianos figuram muitos nomes que ficaram famosos na história. Nos tempos antigos foram 
+        vegetarianos: Buda (Sáquia-Muni), Pitágoras, Platão, Sêneca, Pasteur, Edison.<br><br>
+        Foram também: Napoleão Bonaparte, Adolf Hitler, Joseph Stalin, Mahatma Ghandi, e era também Chiang-kai-Chek.<br><br>
+        Vegetariano foi também Albert Einstein, autor da famosa teoria da relatividade.<br><br>
+        O homem se alimentou, originariamente, mais de vegetais que de outros produtos.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.title("Nutri Amorim - Seu Blog de Nutrição")
 
 st.sidebar.title("Menu")
@@ -56,7 +76,7 @@ page = st.sidebar.radio("Navegue pelo site", ["Início", "Sobre", "Receitas", "P
 if page == "Início":
     st.header("Bem-vindo ao Blog Nutri Amorim!")
     st.write("Aqui você encontrará conteúdos sobre nutrição, pesquisas científicas e receitas saudáveis.")
-    st.image("imagens_carrosel/imagem1.jpg", caption="Imagem de boas-vindas", use_column_width=True)
+    st.image("imagens_carrosel/imagem1.jpg", caption="Imagem de boas-vindas", use_container_width=True)
 
 elif page == "Sobre":
     st.header("Sobre o Blog")
